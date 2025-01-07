@@ -1,6 +1,5 @@
-// main.scss hoặc index.scss
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
-@import './variables';
-@import './mixins';
-@import './variables';
+@use './variables' as *;  
+@use './mixins' as *;    
+@use './global' as *; 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');

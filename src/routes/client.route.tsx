@@ -1,16 +1,16 @@
-import { Route } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
+import Home from "../pages/clients/Home/Home";
 
 
 function ClientRoute() {
 
     return (
-        <>
-            <Route index/>
-            <Route path="products"/>
-            <Route path="carts"/>
-            <Route path="about"/>
-        </>
+        <Routes>
+            <Route index element={<Home />} />
+        </Routes>
     )
+        
+    
 }
 
 export default ClientRoute
