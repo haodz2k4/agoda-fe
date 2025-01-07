@@ -1,12 +1,12 @@
 import Header from "../../../components/Header/Header"
+import Hero from "./components/Hero/Hero"
 
 function Home() {
     
-    console.log("Run here")
     return (
         <>
             <Header/>
-            <h3>Trang chủ</h3>
+            <Hero />
         </>
     )
 }
