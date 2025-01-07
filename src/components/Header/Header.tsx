@@ -24,8 +24,9 @@ function Header() {
                             <li><NavLink to={"/help"}>Liên lạc</NavLink></li>
                             <li><NavLink to={"/siu"}>Chuyến đi</NavLink></li>
                         </ul>
+                        
                     </div>
-
+                    
                     {/* language */}
                     <div className={styles.header__language }>
                         <img src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/a/a3478fc6e57b8681609c1458bd50cbb9.svg" alt="" />
@@ -38,6 +39,10 @@ function Header() {
                         <button className={`${styles.header__btn} ${styles['header__btn--register']}`}>
                             <i className="fa-solid fa-user-plus"></i> Đăng ký
                         </button>
+                    </div>
+                    {/* header bar */}
+                    <div className={styles.header__bar}>
+                        <i className="fa-solid fa-bars"></i>
                     </div>
                 </div>
                
