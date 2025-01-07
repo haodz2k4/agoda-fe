@@ -1,31 +1,43 @@
-import './header.module.scss'
+import styles from './header.module.scss'
 import { NavLink } from 'react-router-dom'
 
 
 function Header() {
 
     return (
-        <header className="header">
+        <header className={styles.header}>
+            <div className={styles.header__top}>Trang web đặt phòng trực tuyến số 1 Việt Nam <img src="https://cdn6.agoda.net/images/mobile/flag-vn@2x.png" alt="" /></div>
             <div className="container">
                
-                <div className="header__inner">
+                <div className={styles.header__inner}>
                     {/* logo  */}
-                    <div className="header__logo">
-                        <img className='header__img' src="" alt="" />
+                    <div className={styles.header__logo}>
+                        <img className={styles.header__img} src="https://cdn6.agoda.net/images/kite-js/logo/agoda/color-default.svg" alt="" />
                     </div>
+                
                     {/* menu */}
-                    <div className="header__menu">
+                    <div className={styles.header__menu}>
                         <ul>
-                            <li><NavLink to={""}>Trang chủ</NavLink></li>
-                            <li><NavLink to={""}>Hỗ trợ</NavLink></li>
-                            <li><NavLink to={""}>Liên lạc</NavLink></li>
-                            <li><NavLink to={""}>Chuyến đi</NavLink></li>
+                            <li><NavLink to={"/"}><i className="fa-solid fa-house"></i> Trang chủ</NavLink></li>
+                            <li><NavLink to={"/tour"}><i className="fa-solid fa-plane"></i> Tour, Chuyến đi</NavLink></li>
+                            <li><NavLink to={"/contact"}>Hỗ trợ</NavLink></li>
+                            <li><NavLink to={"/help"}>Liên lạc</NavLink></li>
+                            <li><NavLink to={"/siu"}>Chuyến đi</NavLink></li>
                         </ul>
                     </div>
+
+                    {/* language */}
+                    <div className={styles.header__language }>
+                        <img src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/a/a3478fc6e57b8681609c1458bd50cbb9.svg" alt="" />
+                        <span>VN | VNI</span>
+                        <i className="fa-solid fa-caret-down"></i>
+                    </div>
                     {/* auth */}
-                    <div className="header__auth">
-                        <button className="btn header__btn--login">Đăng nhập</button>
-                        <button className="btn header__btn--register">Đăng ký</button>
+                    <div className={styles.header__auth}>
+                        <button className={`${styles.header__btn} ${styles['header__btn--login']}`}><i className="fa-solid fa-user"></i> Đăng nhập</button>
+                        <button className={`${styles.header__btn} ${styles['header__btn--register']}`}>
+                            <i className="fa-solid fa-user-plus"></i> Đăng ký
+                        </button>
                     </div>
                 </div>
                
