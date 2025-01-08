@@ -1,5 +1,5 @@
 import styles from './header.module.scss'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 
 function Header() {
@@ -35,7 +35,7 @@ function Header() {
                     </div>
                     {/* auth */}
                     <div className={styles.header__auth}>
-                        <button className={`${styles.header__btn} ${styles['header__btn--login']}`}><i className="fa-solid fa-user"></i> Đăng nhập</button>
+                        <Link to={"/login"} className={`${styles.header__btn} ${styles['header__btn--login']}`}><i className="fa-solid fa-user"></i> Đăng nhập</Link>
                         <button className={`${styles.header__btn} ${styles['header__btn--register']}`}>
                             <i className="fa-solid fa-user-plus"></i> Đăng ký
                         </button>

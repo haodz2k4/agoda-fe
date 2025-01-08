@@ -1,0 +1,66 @@
+@use '../../../assets/styles/mixins' as *;
+@use '../../../assets/styles/variables' as *;
+
+.login__container {
+    @include flex-center;
+    height: 100vh; 
+    background-image: url('../../../assets/images/background_login.jpg');
+}
+
+.login {
+
+    padding: 50px;
+    border-radius: 30px;
+    border: solid;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 2px 8px 3px;
+    color: $main-color;
+
+    &__form {
+        width: 300px;
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__inp-group {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0 20px 0; 
+
+        label {
+            margin-bottom: 4px;
+            font-weight: bold;
+        }
+    }
+
+    &__inp {
+        padding: 8px;
+        border: solid 1px;
+        border-radius: 8px;
+    }
+
+    &__other {
+        display: flex;
+        justify-content: space-between; 
+
+        &--remember {
+            display: flex;
+            gap: 3px;
+        }
+
+        &--forgot {
+            a {
+                color: $main-color ;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__btn {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+}
