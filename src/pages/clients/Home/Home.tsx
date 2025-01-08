@@ -1,5 +1,6 @@
 import Header from "../../../components/Header/Header"
 import AttractiveTrips from "./components/AttractiveTrips/AttractiveTrips"
+import FeaturedHomes from "./components/FeaturedHomes/FeaturedHomes"
 import Hero from "./components/Hero/Hero"
 
 function Home() {
@@ -10,6 +11,7 @@ function Home() {
             <Hero />
             <div className="container">
                 <AttractiveTrips/>
+                <FeaturedHomes/>
             </div>
         </>
     )

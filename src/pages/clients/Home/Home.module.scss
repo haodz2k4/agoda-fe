@@ -113,3 +113,62 @@
     
 }
 //END ATTRACTIVE TRIPS 
+
+//FEATURED HOMES 
+.featured {
+    padding: 30px 0 30px 0;
+    
+
+    &__menu {
+
+        display: flex;
+            
+        gap: 30px;
+        padding: 10px 0px 18px 8px;
+        &--item {
+            
+            color: $light-gray-color;
+            font-weight: bold;
+            box-sizing: border-box;
+            padding: 10px;
+            border-radius: 20px;
+            
+        }
+
+        &--item:hover {
+            color:$info-color;
+            background-color: #D1EDFF;
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__item {
+        padding: 10px;
+    }
+
+    &__desc {
+        line-height: 0.8;
+
+        &--star {
+            color: $secondary-color;
+        }
+
+        &--price {
+            color: $primary-color;
+            font-weight: bold;
+        }
+    }
+
+    &__img {
+        width: 263px;
+        height: 200px;
+        border-radius: 15px;
+    }
+}
+
+//END FEATURED HOMES 
