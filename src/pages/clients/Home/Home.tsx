@@ -1,3 +1,4 @@
+import Footer from "../../../components/Footer/Footer"
 import Header from "../../../components/Header/Header"
 import AttractiveTrips from "./components/AttractiveTrips/AttractiveTrips"
 import FeaturedHomes from "./components/FeaturedHomes/FeaturedHomes"
@@ -13,6 +14,7 @@ function Home() {
                 <AttractiveTrips/>
                 <FeaturedHomes/>
             </div>
+            <Footer/>
         </>
     )
 }
