@@ -36,9 +36,9 @@ function Header() {
                     {/* auth */}
                     <div className={styles.header__auth}>
                         <Link to={"/login"} className={`${styles.header__btn} ${styles['header__btn--login']}`}><i className="fa-solid fa-user"></i> Đăng nhập</Link>
-                        <button className={`${styles.header__btn} ${styles['header__btn--register']}`}>
+                        <Link to={"/register"} className={`${styles.header__btn} ${styles['header__btn--register']}`}>
                             <i className="fa-solid fa-user-plus"></i> Đăng ký
-                        </button>
+                        </Link>
                     </div>
                     {/* header bar */}
                     <div className={styles.header__bar}>

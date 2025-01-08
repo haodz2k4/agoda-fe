@@ -1,13 +1,15 @@
 @use '../../../assets/styles/mixins' as *;
 @use '../../../assets/styles/variables' as *;
 
-.login__container {
+.register__container {
     @include flex-center;
     height: 100vh; 
     background-image: url('../../../assets/images/background_login.jpg');
 }
 
-.login {
+
+
+.register {
 
     padding: 50px;
     border-radius: 30px;
@@ -26,7 +28,7 @@
     }
 
     &__form {
-        width: 300px;
+        width: 400px;
     }
 
     &__title {
