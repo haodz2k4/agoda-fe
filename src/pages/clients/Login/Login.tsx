@@ -26,7 +26,8 @@ function Login() {
                             <Link to={"/"}>Quên mật khẩu ?</Link>
                         </div>
                     </div>
-                    <button className={styles.login__btn}>Đăng nhập</button>
+                    <button className={styles.login__btn}>Đăng nhập</button> 
+                    <span className={styles.login__register}>Bạn chưa có tài khoản   <Link>Đăng ký ?</Link></span>
                 </form>
             </div>
         </div>
