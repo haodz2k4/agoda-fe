@@ -1,8 +1,8 @@
 import styles from "./Login.module.scss"
 import { Link } from "react-router-dom"
-import logo_google from "../../../assets/images/logo_google.png"
-import logo_facebook from "../../../assets/images/logo_facebook.png";
-import logo_instagram from "../../../assets/images/logo_instagram.png"
+import logo_google from "../../../assets/clients/images/logo_google.png"
+import logo_facebook from "../../../assets/clients/images/logo_facebook.png";
+import logo_instagram from "../../../assets/clients/images/logo_instagram.png"
 
 function Login() {
 

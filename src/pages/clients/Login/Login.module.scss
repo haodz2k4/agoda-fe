@@ -1,10 +1,10 @@
-@use '../../../assets/client/styles/mixins' as *;
-@use '../../../assets/client/styles/variables' as *;
+@use '../../../assets/clients/styles/mixins' as *;
+@use '../../../assets/clients/styles/variables' as *;
 
 .login__container {
     @include flex-center;
     height: 100vh; 
-    background-image: url('../../../assets/images/background_login.jpg');
+    background-image: url('../../../assets/clients/images/background_login.jpg');
 }
 
 .login {
