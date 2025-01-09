@@ -1,0 +1,39 @@
+@use '../../../assets/admin/scss/variables' as *;
+
+.sider {
+    width: 15%;
+    padding: 10px;
+    background-color: $primary-color;
+    color: $secondary-color;
+
+    &__title {
+        text-align: center;
+    }
+
+    &__menu {
+
+        ul {
+            padding-inline-start: 5px;
+            li {
+                padding: 10px;
+                margin: 10px 0 10px 0;
+                border-bottom: 1px solid;
+                i {
+                    margin-right: 10px;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 18px;
+                }
+
+                
+            }
+            li:hover {
+                background-color: $info-color;
+                border-radius: 5px;
+            }
+        }
+    }
+}

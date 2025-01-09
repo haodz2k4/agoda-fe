@@ -1,0 +1,65 @@
+
+
+.header {
+
+    
+    box-shadow: 0 2px 4px rgb(0, 110, 245);
+    
+    &__inner {
+
+        display: flex;
+        justify-content: space-around;
+        padding: 6px;
+        align-items: center;
+        
+    }
+
+    &__avatar {
+        width: 50px;
+    }
+
+    &__search {
+        
+        .inp__search {
+            width: 250px;
+            border-radius: 2px;
+            padding: 5px;
+        }
+
+        .btn__search {
+            padding: 5px 10px 5px 10px;
+            background-color: white;
+        }
+    }
+
+    &__menu {
+        ul {
+            display: flex;
+
+            li {
+                padding: 10px;
+                font-size: 25px;
+                
+                i {
+                    color: black;
+                }
+            }
+        }
+    }
+
+    &__profiles {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+        &--info {
+            line-height: 0.4;
+        }
+
+        &--title {
+            margin: 4px 0 15px 0;
+        }
+    }
+
+
+}
