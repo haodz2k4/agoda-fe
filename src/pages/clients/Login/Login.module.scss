@@ -1,5 +1,5 @@
-@use '../../../assets/styles/mixins' as *;
-@use '../../../assets/styles/variables' as *;
+@use '../../../assets/client/styles/mixins' as *;
+@use '../../../assets/client/styles/variables' as *;
 
 .login__container {
     @include flex-center;
