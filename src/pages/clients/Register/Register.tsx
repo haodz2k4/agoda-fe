@@ -1,5 +1,8 @@
 import styles from "./Register.module.scss"
 import { Link } from "react-router-dom"
+import logo_google from "../../../assets/images/logo_google.png";
+import logo_facebook from "../../../assets/images/logo_facebook.png";
+import logo_instagram from "../../../assets/images/logo_instagram.png";
 
 function Register() {
 
@@ -36,14 +39,19 @@ function Register() {
                     <div className={styles.register__other}>
                         <div className={styles["register__other--remember"]}>
                             <input type="checkbox" name="" id="" />
-                            <label htmlFor="">Ghi nhớ tôi...</label>
-                        </div>
-                        <div className={styles["register__other--forgot"]}>
-                            <Link to={"/"}>Quên mật khẩu ?</Link>
+                            <label htmlFor="">Chấp nhận tất cả điều khoản trên</label>
                         </div>
                     </div>
-                    <button className={styles.register__btn}>Đăng nhập</button> 
-                    <span className={styles.register__register}>Bạn chưa có tài khoản   <Link>Đăng ký ?</Link></span>
+                    <button className={styles.register__btn}>Đăng ký</button> 
+                    <div className={styles.register__social}>
+                        <div className={styles.register__line}></div>
+                        <ul>
+                            <li><img src={logo_google} alt="" /></li>
+                            <li><img src={logo_facebook} alt="" /></li>
+                            <li><img src={logo_instagram} alt="" /></li>
+                        </ul>
+                    </div>
+                    
                 </form>
             </div>
         </div>

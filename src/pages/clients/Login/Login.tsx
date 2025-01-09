@@ -1,5 +1,8 @@
 import styles from "./Login.module.scss"
 import { Link } from "react-router-dom"
+import logo_google from "../../../assets/images/logo_google.png"
+import logo_facebook from "../../../assets/images/logo_facebook.png";
+import logo_instagram from "../../../assets/images/logo_instagram.png"
 
 function Login() {
 
@@ -30,6 +33,15 @@ function Login() {
                     </div>
                     <button className={styles.login__btn}>Đăng nhập</button> 
                     <span className={styles.login__register}>Bạn chưa có tài khoản   <Link to={"/register"}>Đăng ký ?</Link></span>
+                    <div className={styles.login__social}>
+                        <div className={styles.login__line}></div>
+                        <ul>
+                            <li><img src={logo_google} alt="" /></li>
+                            <li><img src={logo_facebook} alt="" /></li>
+                            <li><img src={logo_instagram} alt="" /></li>
+                        </ul>
+                    </div>
+                    
                 </form>
             </div>
         </div>
