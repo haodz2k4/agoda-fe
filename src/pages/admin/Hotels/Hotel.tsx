@@ -1,5 +1,6 @@
 import Header from "../../../components/admin/Header/Header"
 import Sider from "../../../components/admin/Sider/Sider"
+import TableManage from "../../../components/admin/TableManage/TableManage"
 
 
 function Hotels() {
@@ -12,8 +13,11 @@ function Hotels() {
                 <div className="admin__content">
                     <Header /> 
                     <main className="admin__main">
-                        <h1>Welcome to the Dashboard</h1>
-                        <p>This is your admin panel content area.</p>
+                        <TableManage 
+                        ths={["#","title","thumbnail","rating","createdAt","updatedAt", "Thao tác"]} 
+                        items={[]
+
+                        }/>
                     </main>
                 </div>
             </div>
