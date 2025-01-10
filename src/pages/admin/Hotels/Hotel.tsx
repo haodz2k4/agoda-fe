@@ -1,6 +1,6 @@
 import Header from "../../../components/admin/Header/Header"
 import Sider from "../../../components/admin/Sider/Sider"
-import TableManage from "../../../components/admin/TableManage/TableManage"
+import Table from "./Components/Table/Table"
 
 
 function Hotels() {
@@ -13,11 +13,7 @@ function Hotels() {
                 <div className="admin__content">
                     <Header /> 
                     <main className="admin__main">
-                        <TableManage 
-                        ths={["#","title","thumbnail","rating","createdAt","updatedAt", "Thao tác"]} 
-                        items={[]
-
-                        }/>
+                        <Table />
                     </main>
                 </div>
             </div>
