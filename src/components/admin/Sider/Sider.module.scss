@@ -6,8 +6,8 @@
     background-color: $primary-color;
     color: $secondary-color;
 
-    &__title {
-        text-align: center;
+    &__logo {
+        width: 150px;
     }
 
     &__menu {
@@ -35,5 +35,10 @@
                 border-radius: 5px;
             }
         }
+    }
+
+    &__active {
+        font-weight: bold;
+        padding-left: 20px;
     }
 }

@@ -1,5 +1,6 @@
 import {Route, Routes} from "react-router-dom"
 import Dashboard from "../pages/admin/Dashboard/Dashboard"
+import Hotels from "../pages/admin/Hotels/Hotel"
 
 function AdminRoute() {
 
@@ -7,7 +8,7 @@ function AdminRoute() {
         <Routes>
             <Route path="admin">
                 <Route index path="dashboard" element={<Dashboard />}/>
-                <Route path="users"/>
+                <Route path="hotels" element={<Hotels />}/>
                 <Route path="roles"/>
                 <Route path="permissions"/>
             </Route>
